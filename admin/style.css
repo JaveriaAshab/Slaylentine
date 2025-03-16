@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --lightest: #D8F2FF;
+    --light02: #84E4F7;
+    --light01: #5ADEFF;
+    --light: #00CBFE;
+    --sky-blue: #00BDFE;
+}
+body{
+    background: var(--lightest);
+    width: 100%;
+    display: flex;
+}
+.syne-custom {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.admin-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin-form form{
+    width: 35%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6%;
+    background: var(--light);
+    padding: 4%;
+}
+.admin-form form h1{
+    text-decoration: underline;
+}
+.admin-form form input, .admin-form form button{
+    width: 100%;
+    height: 57px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+.admin-form form input{
+    padding: 5%;
+}
+.admin-form form button{
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.admin-form form button:hover{
+    background: #0087b4;
+    color: white;
+}
+
+header {
+    width: 35vh;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: 0;
+}
+
+header .sidebar {
+    width: 100%;
+    height: 100%;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+header .sidebar .profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    padding: 11%;
+    background: #009bcf;
+}
+
+header .sidebar img {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header .sidebar h4 {
+    font-size: 1.3rem;
+}
+
+header .sidebar .nav-links {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+header .sidebar .nav-links ul {
+    list-style: none;
+    padding: 11%;
+}
+
+header .sidebar .nav-links ul li {
+    margin-bottom: 27px;
+}
+
+header .sidebar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+header .sidebar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+p.logout {
+    width: 100%;
+    padding: 11%;
+    background: #009bcf;
+    margin-top: auto;
+}
+main {
+    flex-grow: 1;
+    margin-left: 35vh;
+}
+
+.acheivement-form, .dare-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+.acheivement-form form, .dare-container form{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: var(--light);
+    padding: 4%;
+}
+.acheivement-form form input[type="text"], .acheivement-form form input[type="number"]{
+    width: 100%;
+    height: 57px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 5%;
+    background: white;
+    margin-top: 17px;
+}
+.acheivement-form form label{
+    margin-top: 17px;
+    font-weight: 500;
+}
+.acheivement-form form input[type="file"]{
+    width: 100%;
+    height: 57px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-top: 3%;
+    padding-left: 5%;
+    background: white;
+    margin-top: 17px;
+}
+.acheivement-form textarea{
+    width: 100%;
+    height: 127px;
+    text-wrap: wrap;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 4%;
+    margin-top: 11px;
+    resize: none;
+}
+.acheivement-form form button, .dare-container form button{
+    width: 100%;
+    height: 57px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: #009bcf;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 17px;
+}
+.acheivement-form form button:hover, .dare-container form button:hover{
+    background: #0087b4;
+}
+.achievements{
+    width: 100%;
+    border-top: solid 2px #009bcf;
+    margin-top: 4%;
+    padding-top: 2%;
+}
+.main-container{
+    padding: 2%;
+}
+table{
+    width: 100%;
+    margin-top: 11px;
+}
+table th{
+    font-weight: 500;
+    background: #009bcf;
+    color: white;
+    padding: 1.1%;
+    text-align: left;
+}
+table td{
+    padding: 1%;
+    border-bottom: solid 2px #009bcf;
+    min-width: 67px;
+}
+table img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+.dare-container form textarea{
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 4%;
+    padding-top: 3%;
+    background: white;
+    margin-top: 17px;
+    resize: none;
+}
+.dares{
+    width: 100%;
+    height: 100%;
+    border-top: solid 2px #009bcf;
+    margin-top: 4%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.dares ul{
+    list-style: none;
+    width: 100%;
+}
+.dares ul li{
+    width: 100%;
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: solid 2px #009bcf;
+}
+.dare-container form p{
+    font-weight: 500;
+    margin-top: 17px;
+}
+.correct { 
+    color: green; 
+}
+.wrong { 
+    color: red; 
+}
+/* table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+th, td { 
+    border: 1px solid black; 
+    padding: 10px; 
+    text-align: center; 
+} */
+
+
+
+
+footer{
+    background: #1e1e1e;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+footer p span{
+    color: #cacaca;
+    letter-spacing: 1px;
+}
